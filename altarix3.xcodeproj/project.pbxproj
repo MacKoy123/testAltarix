@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04755BD62229572D006D2177 /* Autorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04755BD52229572D006D2177 /* Autorization.swift */; };
+		04766332222ACF9000CAA08D /* ProductCore+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04766330222ACF9000CAA08D /* ProductCore+CoreDataClass.swift */; };
+		048B9756222E80A000CB78D4 /* basketProductCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 048B9754222E80A000CB78D4 /* basketProductCoreData.xcdatamodeld */; };
+		048B975D222E832B00CB78D4 /* BasketForCustumer+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048B975B222E832B00CB78D4 /* BasketForCustumer+CoreDataClass.swift */; };
+		04BA20DA2227DB4000088588 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BA20D92227DB4000088588 /* AppDelegate.swift */; };
+		04BA20DF2227DB4000088588 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BA20DD2227DB4000088588 /* Main.storyboard */; };
+		04BA20E12227DB4300088588 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04BA20E02227DB4300088588 /* Assets.xcassets */; };
+		04BA20E42227DB4300088588 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BA20E22227DB4300088588 /* LaunchScreen.storyboard */; };
+		04BA20EE2227DC0600088588 /* AutorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BA20ED2227DC0600088588 /* AutorizationViewController.swift */; };
+		04BA20F02227DC6E00088588 /* EmploeeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BA20EF2227DC6E00088588 /* EmploeeTableViewController.swift */; };
+		04BA20F22227DCCA00088588 /* EmployeeChangeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BA20F12227DCCA00088588 /* EmployeeChangeDetailViewController.swift */; };
+		04BA20F42227DE9800088588 /* NewProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BA20F32227DE9800088588 /* NewProductViewController.swift */; };
+		04BA20F82227E3CE00088588 /* DetailCustumerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BA20F72227E3CE00088588 /* DetailCustumerViewController.swift */; };
+		04BA20FA2227E43300088588 /* BasketCustumerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BA20F92227E43300088588 /* BasketCustumerViewController.swift */; };
+		04BA210222281F8C00088588 /* CustumerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BA210122281F8C00088588 /* CustumerTableViewController.swift */; };
+		04ED1C43222966D200538619 /* modelProduct.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04ED1C032229638600538619 /* modelProduct.xcdatamodeld */; };
+		96BE8AA1A9CA30EADBF57C9E /* Pods_altarix3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DF1E47FF783239583B4F395 /* Pods_altarix3.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		04755BD52229572D006D2177 /* Autorization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Autorization.swift; sourceTree = "<group>"; };
+		04766330222ACF9000CAA08D /* ProductCore+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProductCore+CoreDataClass.swift"; sourceTree = "<group>"; };
+		048B9755222E80A000CB78D4 /* basketProductCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = basketProductCoreData.xcdatamodel; sourceTree = "<group>"; };
+		048B975B222E832B00CB78D4 /* BasketForCustumer+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "BasketForCustumer+CoreDataClass.swift"; path = "../../BasketForCustumer+CoreDataClass.swift"; sourceTree = "<group>"; };
+		04BA20D62227DB4000088588 /* altarix3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = altarix3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04BA20D92227DB4000088588 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		04BA20DE2227DB4000088588 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04BA20E02227DB4300088588 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04BA20E32227DB4300088588 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04BA20E52227DB4300088588 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04BA20ED2227DC0600088588 /* AutorizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutorizationViewController.swift; sourceTree = "<group>"; };
+		04BA20EF2227DC6E00088588 /* EmploeeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmploeeTableViewController.swift; sourceTree = "<group>"; };
+		04BA20F12227DCCA00088588 /* EmployeeChangeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeChangeDetailViewController.swift; sourceTree = "<group>"; };
+		04BA20F32227DE9800088588 /* NewProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProductViewController.swift; sourceTree = "<group>"; };
+		04BA20F72227E3CE00088588 /* DetailCustumerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCustumerViewController.swift; sourceTree = "<group>"; };
+		04BA20F92227E43300088588 /* BasketCustumerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketCustumerViewController.swift; sourceTree = "<group>"; };
+		04BA210122281F8C00088588 /* CustumerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustumerTableViewController.swift; sourceTree = "<group>"; };
+		04ED1C042229638600538619 /* modelProduct.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = modelProduct.xcdatamodel; sourceTree = "<group>"; };
+		2DF1E47FF783239583B4F395 /* Pods_altarix3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_altarix3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		34A694ED44482D9C86C1D804 /* Pods-altarix3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-altarix3.release.xcconfig"; path = "Target Support Files/Pods-altarix3/Pods-altarix3.release.xcconfig"; sourceTree = "<group>"; };
+		9E00E12C9F9FA838918EFF38 /* Pods-altarix3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-altarix3.debug.xcconfig"; path = "Target Support Files/Pods-altarix3/Pods-altarix3.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04BA20D32227DB4000088588 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96BE8AA1A9CA30EADBF57C9E /* Pods_altarix3.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04BA20CD2227DB4000088588 = {
+			isa = PBXGroup;
+			children = (
+				04BA20D82227DB4000088588 /* altarix3 */,
+				04BA20D72227DB4000088588 /* Products */,
+				A2097FA9620D7664D99D81EE /* Pods */,
+				35BC677099205D195228A50F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		04BA20D72227DB4000088588 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04BA20D62227DB4000088588 /* altarix3.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04BA20D82227DB4000088588 /* altarix3 */ = {
+			isa = PBXGroup;
+			children = (
+				04BA20D92227DB4000088588 /* AppDelegate.swift */,
+				04BA20FB2227E47400088588 /* controller */,
+				04BA20FE2227E4CD00088588 /* model */,
+				04BA20DD2227DB4000088588 /* Main.storyboard */,
+				04BA20E02227DB4300088588 /* Assets.xcassets */,
+				04ED1C032229638600538619 /* modelProduct.xcdatamodeld */,
+				048B9754222E80A000CB78D4 /* basketProductCoreData.xcdatamodeld */,
+				04BA20E22227DB4300088588 /* LaunchScreen.storyboard */,
+				04BA20E52227DB4300088588 /* Info.plist */,
+			);
+			path = altarix3;
+			sourceTree = "<group>";
+		};
+		04BA20FB2227E47400088588 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				04BA20ED2227DC0600088588 /* AutorizationViewController.swift */,
+				04BA20FD2227E49E00088588 /* empoleee */,
+				04BA20FC2227E48D00088588 /* custumer */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		04BA20FC2227E48D00088588 /* custumer */ = {
+			isa = PBXGroup;
+			children = (
+				04BA20F72227E3CE00088588 /* DetailCustumerViewController.swift */,
+				04BA210122281F8C00088588 /* CustumerTableViewController.swift */,
+				04BA20F92227E43300088588 /* BasketCustumerViewController.swift */,
+			);
+			path = custumer;
+			sourceTree = "<group>";
+		};
+		04BA20FD2227E49E00088588 /* empoleee */ = {
+			isa = PBXGroup;
+			children = (
+				04BA20F12227DCCA00088588 /* EmployeeChangeDetailViewController.swift */,
+				04BA20EF2227DC6E00088588 /* EmploeeTableViewController.swift */,
+				04BA20F32227DE9800088588 /* NewProductViewController.swift */,
+			);
+			path = empoleee;
+			sourceTree = "<group>";
+		};
+		04BA20FE2227E4CD00088588 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				04766330222ACF9000CAA08D /* ProductCore+CoreDataClass.swift */,
+				048B975B222E832B00CB78D4 /* BasketForCustumer+CoreDataClass.swift */,
+				04755BD52229572D006D2177 /* Autorization.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		35BC677099205D195228A50F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2DF1E47FF783239583B4F395 /* Pods_altarix3.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A2097FA9620D7664D99D81EE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E00E12C9F9FA838918EFF38 /* Pods-altarix3.debug.xcconfig */,
+				34A694ED44482D9C86C1D804 /* Pods-altarix3.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04BA20D52227DB4000088588 /* altarix3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04BA20E82227DB4300088588 /* Build configuration list for PBXNativeTarget "altarix3" */;
+			buildPhases = (
+				E0084CD0198A9FD8537F8C82 /* [CP] Check Pods Manifest.lock */,
+				04BA20D22227DB4000088588 /* Sources */,
+				04BA20D32227DB4000088588 /* Frameworks */,
+				04BA20D42227DB4000088588 /* Resources */,
+				0414679D2236966800BDA8BC /* SwiftLint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = altarix3;
+			productName = altarix3;
+			productReference = 04BA20D62227DB4000088588 /* altarix3.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04BA20CE2227DB4000088588 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Mac;
+				TargetAttributes = {
+					04BA20D52227DB4000088588 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 04BA20D12227DB4000088588 /* Build configuration list for PBXProject "altarix3" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04BA20CD2227DB4000088588;
+			productRefGroup = 04BA20D72227DB4000088588 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04BA20D52227DB4000088588 /* altarix3 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04BA20D42227DB4000088588 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04BA20E42227DB4300088588 /* LaunchScreen.storyboard in Resources */,
+				04BA20E12227DB4300088588 /* Assets.xcassets in Resources */,
+				04BA20DF2227DB4000088588 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0414679D2236966800BDA8BC /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint\n";
+		};
+		E0084CD0198A9FD8537F8C82 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-altarix3-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04BA20D22227DB4000088588 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04BA20EE2227DC0600088588 /* AutorizationViewController.swift in Sources */,
+				04BA20DA2227DB4000088588 /* AppDelegate.swift in Sources */,
+				04BA20F82227E3CE00088588 /* DetailCustumerViewController.swift in Sources */,
+				04BA20F42227DE9800088588 /* NewProductViewController.swift in Sources */,
+				048B9756222E80A000CB78D4 /* basketProductCoreData.xcdatamodeld in Sources */,
+				04BA20FA2227E43300088588 /* BasketCustumerViewController.swift in Sources */,
+				04766332222ACF9000CAA08D /* ProductCore+CoreDataClass.swift in Sources */,
+				04BA210222281F8C00088588 /* CustumerTableViewController.swift in Sources */,
+				04BA20F22227DCCA00088588 /* EmployeeChangeDetailViewController.swift in Sources */,
+				04755BD62229572D006D2177 /* Autorization.swift in Sources */,
+				048B975D222E832B00CB78D4 /* BasketForCustumer+CoreDataClass.swift in Sources */,
+				04BA20F02227DC6E00088588 /* EmploeeTableViewController.swift in Sources */,
+				04ED1C43222966D200538619 /* modelProduct.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		04BA20DD2227DB4000088588 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04BA20DE2227DB4000088588 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04BA20E22227DB4300088588 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04BA20E32227DB4300088588 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04BA20E62227DB4300088588 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04BA20E72227DB4300088588 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04BA20E92227DB4300088588 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E00E12C9F9FA838918EFF38 /* Pods-altarix3.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W7JB7VGX49;
+				INFOPLIST_FILE = altarix3/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = viktorpuzakov.altarix3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04BA20EA2227DB4300088588 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34A694ED44482D9C86C1D804 /* Pods-altarix3.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W7JB7VGX49;
+				INFOPLIST_FILE = altarix3/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = viktorpuzakov.altarix3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04BA20D12227DB4000088588 /* Build configuration list for PBXProject "altarix3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04BA20E62227DB4300088588 /* Debug */,
+				04BA20E72227DB4300088588 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04BA20E82227DB4300088588 /* Build configuration list for PBXNativeTarget "altarix3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04BA20E92227DB4300088588 /* Debug */,
+				04BA20EA2227DB4300088588 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		048B9754222E80A000CB78D4 /* basketProductCoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				048B9755222E80A000CB78D4 /* basketProductCoreData.xcdatamodel */,
+			);
+			currentVersion = 048B9755222E80A000CB78D4 /* basketProductCoreData.xcdatamodel */;
+			path = basketProductCoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		04ED1C032229638600538619 /* modelProduct.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				04ED1C042229638600538619 /* modelProduct.xcdatamodel */,
+			);
+			currentVersion = 04ED1C042229638600538619 /* modelProduct.xcdatamodel */;
+			path = modelProduct.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 04BA20CE2227DB4000088588 /* Project object */;
+}
