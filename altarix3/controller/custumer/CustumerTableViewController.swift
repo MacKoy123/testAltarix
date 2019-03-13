@@ -10,21 +10,30 @@ import UIKit
 import CoreData
 
 var idCoast: Int = 0
+
 var productForSell: [ProductCore] = []
+
 var productForSellOpt: [ProductCore] = []
+
 var productNotFilteredSell: [ProductCore] = []
+
 var productNotFilteredSellOpt: [ProductCore] = []
 
 class CustumerTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
+
     @IBOutlet weak var changerRetailWhosealersSegmentedControl: UISegmentedControl!
 
     var newType: String?
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {return}
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
         let managedContext = appDelegate.persistentContainer.viewContext
         let fetchManaged = NSFetchRequest<NSManagedObject>(entityName: "Product")
         do {
@@ -42,10 +51,6 @@ class CustumerTableViewController: UIViewController, UITableViewDataSource, UITa
             productNotFilteredSellOpt = productForSellOpt
         }
         tableView.reloadData()
-    }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

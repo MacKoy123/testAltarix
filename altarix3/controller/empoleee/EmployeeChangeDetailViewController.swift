@@ -12,27 +12,27 @@ import CoreData
 class EmployeeChangeDetailViewController: UIViewController {
 
     public var productName = productCar[myIndex].name
-    
+
     public var productCategory  = productCar[myIndex].type
-    
+
     public var productCoastBuy = productCar[myIndex].coastBuy
-    
+
     public var productCoastRetail = productCar[myIndex].coastSell
-    
+
     public var productCoastWholesalers = productCar[myIndex].coastSellOpt
-    
+
     public var productAvailibility = productCar[myIndex].availability
 
     @IBOutlet weak var nameProductLabel: UILabel!
-    
+
     @IBOutlet weak var availabilityLabel: UILabel!
-    
+
     @IBOutlet weak var categoryLabel: UILabel!
-    
+
     @IBOutlet weak var coastBuyLabel: UILabel!
-    
+
     @IBOutlet weak var coastRetailLabel: UILabel!
-    
+
     @IBOutlet weak var coastWholesalersLabel: UILabel!
 
     override func viewDidLoad() {
@@ -70,8 +70,8 @@ class EmployeeChangeDetailViewController: UIViewController {
             textfield.placeholder = "Введите количество товара"
         }
         let alertActionChange = UIAlertAction(title: "Изменить", style: .default) { (_) in
-            guard let newValue = Int((availabilityAlertController.textFields?.first?.text!)!) else {return}
-            guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {return}
+            guard let newValue = Int((availabilityAlertController.textFields?.first?.text!)!) else { return }
+            guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
             let managedContext = appDelegate.persistentContainer.viewContext
             productCar[myIndex].setValue(newValue, forKey: "availability")
             do {
@@ -96,7 +96,7 @@ class EmployeeChangeDetailViewController: UIViewController {
         pickerViewAllert.delegate = self
         newTypeAlertController.view.addSubview(pickerViewAllert)
         let action = UIAlertAction(title: "Изменить", style: .default) { (_) in
-            guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {return}
+            guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
             let managedContext = appDelegate.persistentContainer.viewContext
             productCar[myIndex].setValue(self.productCategory, forKey: "type")
             do {
@@ -123,8 +123,8 @@ class EmployeeChangeDetailViewController: UIViewController {
             textfield.placeholder = "Введите" + title
         }
         let alertActionChange = UIAlertAction(title: "Изменить", style: .default) { (_) in
-            guard let newValue = Double((changeCoastAlertController.textFields?.first?.text!)!) else {return}
-            guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {return}
+            guard let newValue = Double((changeCoastAlertController.textFields?.first?.text!)!) else { return }
+            guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
             let managedContext = appDelegate.persistentContainer.viewContext
             productCar[myIndex].setValue(newValue, forKey: forkey)
             do {
@@ -141,7 +141,7 @@ class EmployeeChangeDetailViewController: UIViewController {
     }
 
     @IBAction func exitCliackBarButtonItem(_ sender: UIBarButtonItem) {
-        guard let arrayOfView: [UIViewController] = self.navigationController?.viewControllers else {return}
+        guard let arrayOfView: [UIViewController] = self.navigationController?.viewControllers else { return }
         for controller in arrayOfView where controller is EmploeeTableViewСontroller {
             self.navigationController?.popToViewController(controller, animated: true)
             break

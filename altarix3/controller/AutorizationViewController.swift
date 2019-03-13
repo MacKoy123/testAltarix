@@ -9,13 +9,15 @@
 import UIKit
 
 class AutorizationViewController: UIViewController {
-    
+
     var admin = Autorization(login: "admin", password: "admin")
-    
+
     @IBOutlet weak var loginTextField: UITextField!
+
     @IBOutlet weak var passwordTextField: UITextField!
+
     @IBOutlet weak var infoLabel: UILabel!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         loginTextField.text = "admin"

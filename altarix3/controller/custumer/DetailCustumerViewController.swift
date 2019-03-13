@@ -12,17 +12,25 @@ import CoreData
 var productForBasketCustumer: [BasketForCustumer] = []
 
 class DetailCustumerViewController: UIViewController {
+
     public var productName = productCar[myIndex].name
+
     public var productType  = productCar[myIndex].type
+
     public var productCoastRetail = productCar[myIndex].coastSell
+
     public var productCoastWhosealers = productCar[myIndex].coastSellOpt
+
     public var productAvailibility = productCar[myIndex].availability
 
     var newProductForBasket: BasketForCustumer!
 
     @IBOutlet weak var nameProductLabel: UILabel!
+
     @IBOutlet weak var categoryProductLabel: UILabel!
+
     @IBOutlet weak var coastProductLabel: UILabel!
+
     @IBOutlet weak var typeCoastLabel: UILabel!
 
     override func viewDidLoad() {

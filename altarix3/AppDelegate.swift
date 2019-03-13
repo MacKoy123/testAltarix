@@ -22,29 +22,39 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillResignActive(_ application: UIApplication) {
 
-        // Use this method to pause ongoing tasks, disable timers, and invalidate graphics
-        //rendering callbacks. Games should use this method to pause the game.
+        /*
+         Use this method to pause ongoing tasks, disable timers, and invalidate graphics
+         rendering callbacks. Games should use this method to pause the game.
+         */
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {
 
-        // If your application supports background execution,
-        //this method is called instead of applicationWillTerminate: when the user quits.
+        /*
+        If your application supports background execution,
+        this method is called instead of applicationWillTerminate: when the user quits.
+         */
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
-        // Called as part of the transition from the background to the active state;
-        //here you can undo many of the changes made on entering the background.
+        /*
+        Called as part of the transition from the background to the active state;
+        here you can undo many of the changes made on entering the background.
+         */
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive.
-        //If the application was previously in the background, optionally refresh the user interface.
+        /*
+        Restart any tasks that were paused (or not yet started) while the application was inactive.
+        If the application was previously in the background, optionally refresh the user interface.
+         */
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
-        // Called when the application is about to terminate. Save data if appropriate.
-        //See also applicationDidEnterBackground:.
+        /*
+        Called when the application is about to terminate. Save data if appropriate.
+        See also applicationDidEnterBackground:.
+         */
     }
 
     // MARK: - Core Data stack
@@ -59,11 +69,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let container = NSPersistentContainer(name: "basketProductCoreData")
         container.loadPersistentStores(completionHandler: { (_, error) in
             if let error = error as NSError? {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate.
-                //You should not use this function in a shipping application,
-                //although it may be useful during development.
-
+                /*
+                Replace this implementation with code to handle the error appropriately.
+                fatalError() causes the application to generate a crash log and terminate.
+                You should not use this function in a shipping application,
+                although it may be useful during development.
+                */
+                
                 /*
                  Typical reasons for an error here include:
                  * The parent directory does not exist, cannot be created, or disallows writing.
@@ -117,10 +129,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             do {
                 try context.save()
             } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate.
-                //You should not use this function in a shipping application,
-                //although it may be useful during development.
+                /*
+                Replace this implementation with code to handle the error appropriately.
+                fatalError() causes the application to generate a crash log and terminate.
+                You should not use this function in a shipping application,
+                although it may be useful during development.
+                 */
                 let nserror = error as NSError
                 fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
             }

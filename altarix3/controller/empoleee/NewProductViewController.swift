@@ -45,14 +45,9 @@ class NewProductViewController: UIViewController {
             let alertController = UIAlertController(title: "Товар успешно создан",
                                                     message: "Товар появится в списке товаров через пару секунд",
                                                     preferredStyle: .alert)
-            /* let action = UIAlertAction(title: "Внести", style: .default) { (action) in
-             if let newIndex = productCar.firstIndex(where: {$0.name == newproduct1}) {myIndex = newIndex}
-             self.performSegue(withIdentifier: "newProductDetail", sender: self)
-             }*/
             let alertActionCancel = UIAlertAction(title: "OK", style: .default) { (_) in
                 self.navigationController?.popViewController(animated: true)
             }
-            //allert.addAction(action)
             alertController.addAction(alertActionCancel)
             self.present(alertController, animated: true, completion: nil)
         }

@@ -12,12 +12,19 @@ import CoreData
 class BasketCustumerViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     var summ = 0.0
+
     @IBOutlet weak var summBasketLabel: UILabel!
+
     @IBOutlet weak var tableView: UITableView!
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        summBasketLabel.text = String(summ)
+    }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {return}
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
         let managedContext = appDelegate.persistentContainerforBasket.viewContext
         let fetchManaged = NSFetchRequest<NSManagedObject>(entityName: "BasketForCustumer")
         do {
@@ -26,11 +33,6 @@ class BasketCustumerViewController: UIViewController, UITableViewDataSource, UIT
             print("failed fetch")
         }
         tableView.reloadData()
-    }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        summBasketLabel.text = String(summ)
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -54,7 +56,7 @@ class BasketCustumerViewController: UIViewController, UITableViewDataSource, UIT
                    commit editingStyle: UITableViewCell.EditingStyle,
                    forRowAt indexPath: IndexPath) {
         if editingStyle == UITableViewCell.EditingStyle.delete {
-            guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {return}
+            guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
             let managedContext = appDelegate.persistentContainerforBasket.viewContext
             managedContext.delete(productForBasketCustumer[indexPath.row])
             productForBasketCustumer.remove(at: indexPath.row)
@@ -130,11 +132,11 @@ class BasketCustumerViewController: UIViewController, UITableViewDataSource, UIT
         guard let json = try? JSONSerialization.data(withJSONObject: array, options: .prettyPrinted) else {return}
         let url = try? FileManager.default.url(for: .documentDirectory, in: .userDomainMask,
                                                appropriateFor: nil, create: false)
-        guard let jsonUrl = url?.appendingPathComponent("\(String(number))basket.json") else {return}
+        guard let jsonUrl = url?.appendingPathComponent("\(String(number))basket.json") else { return }
         print(jsonUrl)
         try? json.write(to: jsonUrl)
 
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {return}
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
         let managedContext = appDelegate.persistentContainerforBasket.viewContext
         for product in productForBasketCustumer {
             managedContext.delete(product)

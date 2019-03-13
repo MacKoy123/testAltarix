@@ -10,16 +10,26 @@ import UIKit
 import CoreData
 
 var myIndex = 0
+
 var productCar: [ProductCore] = []
 
 class EmploeeTableViewСontroller: UITableViewController {
 
     let searchController = UISearchController(searchResultsController: nil)
+
     var filteredProducts = [ProductCore]()
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        searchController.searchResultsUpdater = self
+        searchController.dimsBackgroundDuringPresentation = false
+        definesPresentationContext = true
+        tableView.tableHeaderView = searchController.searchBar
+    }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {return}
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
         let managedContext = appDelegate.persistentContainer.viewContext
         let fetchManaged = NSFetchRequest<NSManagedObject>(entityName: "Product")
         do {
@@ -29,14 +39,6 @@ class EmploeeTableViewСontroller: UITableViewController {
         }
         tableView.reloadData()
     }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        searchController.searchResultsUpdater = self
-        searchController.dimsBackgroundDuringPresentation = false
-        definesPresentationContext = true
-        tableView.tableHeaderView = searchController.searchBar
-        }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if isFiltering() {
@@ -64,7 +66,7 @@ class EmploeeTableViewСontroller: UITableViewController {
                                                     preferredStyle: .alert)
             let alertActionDelete = UIAlertAction(title: "Удалить", style: .default) { (_) in
                 myIndex = 0
-                guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {return}
+                guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
                 let managedContext = appDelegate.persistentContainer.viewContext
                 managedContext.delete(productCar[indexPath.row])
                 productCar.remove(at: indexPath.row)
@@ -81,6 +83,7 @@ class EmploeeTableViewСontroller: UITableViewController {
             present(alertController, animated: true, completion: nil)
         }
     }
+
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if isFiltering() {
             if let new = productCar.firstIndex(of: filteredProducts[indexPath.row]) {myIndex = new}

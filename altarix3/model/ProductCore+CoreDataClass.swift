@@ -24,10 +24,14 @@ public class ProductCore: NSManagedObject {
     }
 
     @NSManaged public var availability: Int64
-    @NSManaged public var coastBuy: Double
-    @NSManaged public var coastSell: Double
-    @NSManaged public var coastSellOpt: Double
-    @NSManaged public var name: String
-    @NSManaged public var type: String?
 
+    @NSManaged public var coastBuy: Double
+
+    @NSManaged public var coastSell: Double
+
+    @NSManaged public var coastSellOpt: Double
+
+    @NSManaged public var name: String
+
+    @NSManaged public var type: String?
 }
