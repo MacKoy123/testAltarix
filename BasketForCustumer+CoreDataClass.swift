@@ -15,7 +15,9 @@ public class BasketForCustumer: NSManagedObject {
     }
 
     @NSManaged public var nameInBasket: String?
+
     @NSManaged public var availabilityCustumer: Int64
+
     @NSManaged public var coastBasketProduct: Double
 
 }

@@ -9,6 +9,7 @@
 class Autorization {
 
     var login: String
+
     var password: String
 
     init(login: String, password: String) {
